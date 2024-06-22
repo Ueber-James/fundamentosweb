@@ -1,0 +1,148 @@
+/*Estilo do Menu*/
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+
+
+
+}
+
+.pokeball-menu {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, red, white);
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.pokeball-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.pokeball-menu ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.pokeball-menu ul li a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pokeball-menu ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Estilo da Pagina Index*/
+
+main {
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section:nth-child(odd) {
+    flex-direction: row;
+}
+
+
+
+section img {
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    margin: 0 20px;
+
+}
+
+section p {
+    flex: 1;
+    text-align: justify;
+}
+
+h2 {
+    justify-content: center;
+    text-align: center;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+    bottom: 0;
+    width: 100%;
+}
+
+#footer_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* topo */
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+
+
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s;
+}
+
+#back-to-top img {
+    width: 50px; /* Tamanho do ícone da pokebola */
+    height: 50px;
+}
+
+#back-to-top:hover {
+
+    cursor: pointer;
+}
